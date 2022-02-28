@@ -1,0 +1,104 @@
+* {
+  font-family: Helvetica, Ariel, sans-serif;
+}
+
+body {
+  background: rgb(255, 241, 241);
+}
+
+#heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.5em;
+}
+#data {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+.post {
+  max-width: 300px;
+  max-height: 400px;
+  border: 0.5px solid rgb(218, 218, 218);
+  margin: 5px 5px;
+  padding: 15px;
+  display: none;
+  background: rgb(255, 255, 255);
+}
+#profile {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#name {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0 0 5px 0;
+  position: relative;
+  top: -45px;
+  left: 60px;
+}
+#date {
+  font-size: 0.7rem;
+  margin: 0;
+  position: relative;
+  top: -45px;
+  left: 60px;
+}
+#insta {
+  margin: 0;
+  position: relative;
+  top: -75px;
+  left: 275px;
+}
+#image {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0;
+  margin-top: -50px;
+}
+#caption {
+  font-size: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.heart {
+  vertical-align: top;
+  margin-right: 5px;
+}
+.likes {
+  font-size: 0.8rem;
+}
+#loadmore {
+  margin: 50px auto 0px;
+  display: table;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #2196f3;
+}
+#data .post:nth-child(1),
+.post:nth-child(2),
+.post:nth-child(3),
+.post:nth-child(4) {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  #data {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #data {
+    grid-template-columns: auto;
+  }
+}
